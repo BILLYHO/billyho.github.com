@@ -1,0 +1,180 @@
+/*  CUSTOM GIST SYNTAX HIGHLIGHTING */
+
+
+
+.gist {-webkit-font-smoothing:subpixel-antialiased;}
+.gist ::-moz-selection {color:#FCF4DC;background:#FFFFFF;}
+.gist ::-webkit-selection {color:#FCF4DC;background:#FFFFFF;}
+
+/*反白后字体颜色 背景颜色*/
+.gist ::selection {color:#FCF4DC;background:#FFFFFF;}
+
+/*普通字体颜色*/
+.gist {color:#CCCCCC !important;}
+
+/*边框宽度 颜色*/
+.gist .gist-file {border:1px solid #272822 !important;font-family:'Anonymous Pro','Droid Sans Mono','DejaVu Sans Mono',Monaco,Consolas,'Lucida Console',Courier,monospace !important;}
+
+/*底部普通字体颜色 背景颜色*/
+.gist .gist-file .gist-meta {color:#666666 !important;background-color:#272822 !important;}
+
+/*底部链接字体颜色*/
+.gist .gist-file .gist-meta a {color: #DDDDDD !important;}
+
+/*代码段与底部分割线宽度 颜色 代码段背景色*/
+.gist .gist-file .gist-data {border-bottom:1px solid #272822 !important;background-color:#272822 !important;}
+.gist .gist-file .gist-data pre {font-family:'Anonymous Pro','Droid Sans Mono','DejaVu Sans Mono',Monaco,Consolas,'Lucida Console',Courier,monospace !important;}
+.gist .gist-file .gist-data .gist-line-numbers {color:#475B62 !important;border-right:1px solid #272822 !important;background-color:#272822 !important;}
+
+
+/*--------------------Token--------------------*/
+/* for any type of text data */
+.gist-syntax {color:#C9CED3 !important;} 	/* Text */
+/* for specially highlighted whitespace */
+.gist-syntax .w {color:#708284 !important;} 	/* Whitespace */
+/* represents lexer errors */
+.gist-syntax .err {color:#708284 !important;} 	/* Error */
+/* special token for data not matched by a parser (e.g. HTML markup in PHP code) */
+.gist-syntax .x {color:#C9CED3 !important;} 	/* Other */
+
+/*--------------------Keyword--------------------*/
+/* For any kind of keyword (especially if it doesn’t match any of the subtypes of course) */
+/*using return */
+.gist-syntax .k {color:#FFAA00 !important;} /* Keyword */
+/* For keywords that are constants (e.g. None in future Python versions) */
+.gist-syntax .kc {color:#FFAA00 !important;} /* Keyword.Constant */
+/* For keywords used for variable declaration (e.g. var in some programming languages like JavaScript) */
+.gist-syntax .kd {color:#FFAA00 !important;} /* Keyword.Declaration */
+/* For keywords used for namespace declarations (e.g. import in Python and Java and package in Java) */
+.gist-syntax .kn {color:#FFAA00 !important;} /* Keyword.Namespace */
+/* For keywords that aren’t really keywords (e.g. None in old Python versions) */
+.gist-syntax .kp {color:#FFAA00 !important;} /* Keyword.Pseudo */
+/* For reserved keywords. */
+.gist-syntax .kr {color:#FFAA00 !important;} /* Keyword.Reserved */
+/* For builtin types that can’t be used as identifiers (e.g. int, char etc. in C) */
+.gist-syntax .kt {color:#84D6E4 !important;} /* Keyword.Type */
+
+
+
+
+/*--------------------Name--------------------*/
+/* For any name (variable names, function names, classes) */
+.gist-syntax .n {color:#CCCCCC !important;} /* Name */
+/* For all attributes (e.g. in HTML tags). */
+.gist-syntax .na {color:#E28181 !important;} /* Name.Attribute */
+/* Builtin names; names that are available in the global namespace */
+.gist-syntax .nb {color:#A57706 !important;} /* Name.Builtin */
+/* Builtin names that are implicit (e.g. self in Ruby, this in Java). */
+.gist-syntax .bp {color:#A57706 !important;} /* Name.Builtin.Pseudo */
+/* Class names. Because no lexer can know if a name is a class or a function or something else this token is meant for class declarations. */
+.gist-syntax .nc {color:#708284 !important;} /* Name.Class */
+/* Token type for constants. In some languages you can recognise a token by the way it’s defined (the value after a const keyword for example). In other languages constants are uppercase by definition (Ruby) */
+.gist-syntax .no {color:#708284 !important;} /* Name.Constant */
+/* Token type for decorators. Decorators are synatic elements in the Python language. Similar syntax elements exist in C# and Java. */
+.gist-syntax .nd {color:#595AB7 !important;} /* Name.Decorator */
+/* Token type for special entities. (e.g. &nbsp; in HTML). */
+.gist-syntax .ni {color:#6C71C4 !important;} /* Name.Entity */
+/* Token type for exception names (e.g. RuntimeError in Python). Some languages define exceptions in the function signature (Java). You can highlight the name of that exception using this token then. */
+.gist-syntax .ne {color:#CF5E5C !important;} /* Name.Exception */
+/* Token type for function names. */
+.gist-syntax .nf {color:#CCCCCC !important;} /* Name.Function */
+/* Token type for label names (e.g. in languages that support goto). */
+.gist-syntax .nc {color:#B7D936 !important;} /* Name.Label */
+/* Token type for namespaces. (e.g. import paths in Java/Python), names following the module/namespace keyword in other languages. */
+.gist-syntax .nn {color:#B7D936 !important;} /* Name.Namespace */
+/* Other names. Normally unused. */
+.gist-syntax .nx {color:#51DEFF !important;} /* Name.Other */
+/* Tag names (in HTML/XML markup or configuration files). */
+.gist-syntax .nt {color:#51DEFF !important;} /* Name.Tag */
+/* Token type for variables. Some languages have prefixes for variable names (PHP, Ruby, Perl). You can highlight them using this token. */
+.gist-syntax .nv {color:#708284 !important;} /* Name.Variable */
+/* same as Name.Variable but for class variables (also static variables). */
+.gist-syntax .vc {color:#708284 !important;} /* Name.Variable.Class */
+/* same as Name.Variable but for global variables (used in Ruby, for example). */
+.gist-syntax .vg {color:#708284 !important;} /* Name.Variable.Global */
+/* same as Name.Variable but for instance variables. */
+.gist-syntax .vi {color:#B7D936 !important;} /* Name.Variable.Instance */
+
+/*--------------------Literal--------------------*/
+/* For any literal (if not further defined) */
+.gist-syntax .l {color:#259286 !important;} /* Literal */
+/* For date literals (e.g. 42d in Boo). */
+.gist-syntax .ld {color:#259286 !important;} /* Literal.Date */
+
+/* For any string literal */
+.gist-syntax .s {color:#80F206 !important;} /* Literal.String */
+/* Token type for strings enclosed in backticks */
+.gist-syntax .sb {color:#80F206 !important;} /* Literal.String.Backtick */
+/* Token type for single characters (e.g. Java, C) */
+.gist-syntax .sc {color:#80F206 !important;} /* Literal.String.Char */
+/* Token type for documentation strings (for example Python) */
+.gist-syntax .sd {color:#259286 !important;} /* Literal.String.Doc */
+/* Double quoted strings */
+.gist-syntax .s2 {color:#259286 !important;} /* Literal.String.Double */
+/* Token type for escape sequences in strings */
+.gist-syntax .se {color:#259286 !important;} /* Literal.String.Escape */
+/* Token type for “heredoc” strings (e.g. in Ruby or Perl) */
+.gist-syntax .sh {color:#259286 !important;} /* Literal.String.Heredoc */
+/* Token type for interpolated parts in strings (e.g. #{foo} in Ruby) */
+.gist-syntax .si {color:#259286 !important;} /* Literal.String.Interpol */
+/* Token type for any other strings (for example %q{foo} string constructs in Ruby) */
+.gist-syntax .sx {color:#A57706 !important;} /* Literal.String.Other */
+/* Token type for regular expression literals (e.g. /foo/ in JavaScript). */
+.gist-syntax .sr {color:#259286 !important;} /* Literal.String.Regex */
+/* Token type for single quoted strings */
+.gist-syntax .s1 {color:#259286 !important;} /* Literal.String.Single */
+/* Token type for symbols (e.g. :foo in LISP or Ruby) */
+.gist-syntax .ss {color:#259286 !important;} /* Literal.String.Symbol */
+
+/* Token type for any number literal */
+.gist-syntax .m {color:#259286 !important;} /* Literal.Number */
+/* Token type for float literals (e.g. 42.0) */
+.gist-syntax .mf {color:#259286 !important;} /* Literal.Number.Float */
+/* Token type for hexadecimal number literals (e.g. 0xdeadbeef) */
+.gist-syntax .mh {color:#259286 !important;} /* Literal.Number.Hex */
+/* Token type for integer literals (e.g. 42) */
+.gist-syntax .mi {color:#259286 !important;} /* Literal.Number.Integer */
+/* Token type for long integer literals (e.g. 42L in Python) */
+.gist-syntax .il {color:#708284 !important;} /* Literal.Number.Integer.Long */
+/* Token type for octal literals */
+.gist-syntax .mo {color:#259286 !important;} /* Literal.Number.Oct */
+
+
+
+/*--------------------Operator--------------------*/
+/* operators (+, not...) < > >> = + -*/
+.gist-syntax .o {color:#E44E7A !important;} /* Operator */
+/* For any operator that is a word (e.g. not). */
+.gist-syntax .ow {color:#708284 !important;} /* Operator.Word */
+
+/*--------------------Punctuation--------------------*/
+/* For any punctuation which is not an operator (e.g. [, (...) */
+.gist-syntax .p {color:#BBBBBB !important;} /* Punctuation */
+
+
+/*--------------------Comments--------------------*/
+/* Token type for any comment */
+.gist-syntax .c {color:#75715E !important;} /* Comment */
+/* Token type for multiline comments */
+.gist-syntax .cm {color:#9933CC !important;} /* Comment.Multiline */
+/* Token type for preprocessor comments (also <?php/<% constructs)*//* #include */
+.gist-syntax .cp {color:#75715E !important;} /* Comment.Preproc */
+/* Token type for comments that end at the end of a line (e.g. # foo) */
+.gist-syntax .c1 {color:#75715E !important;} /* Comment.Single */
+/* Special data in comments. For example code tags, author and license information, etc */
+.gist-syntax .cs {color:#75715E !important;} /* Comment.Special */
+
+
+/*--------------------Generic Tokens--------------------*/
+/* Generic tokens are for special lexers like the DiffLexer that doesn’t really highlight a programming language but a patch file */
+.gist-syntax .gd {color:#708284 !important;background:#042029 !important;} /* Generic.Deleted */
+.gist-syntax .gd {color:#708284 !important;background:#042029 !important;} /* Generic.Deleted.Specific */
+.gist-syntax .ge {color:#708284 !important;} /* Generic.Emph */
+.gist-syntax .gr {color:#708284 !important;} /* Generic.Error */
+.gist-syntax .gh {color:#708284 !important;} /* Generic.Heading */
+.gist-syntax .gi {color:#708284 !important;background:#042029 !important;} /* Generic.Inserted */
+.gist-syntax .gi {color:#708284 !important;background:#042029 !important;} /* Generic.Inserted.Specific */
+.gist-syntax .go {color:#708284 !important;} /* Generic.Output */
+.gist-syntax .gp {color:#708284 !important;} /* Generic.Prompt */
+.gist-syntax .gu {color:#708284 !important;} /* Generic.Subheading */
+.gist-syntax .gt {color:#708284 !important;} /* Generic.Traceback */
